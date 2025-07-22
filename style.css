@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+    --primary-color: #f3aed4;
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.semi-bold {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.resume {
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+    box-shadow: 3px 3px 5px 3px #dddd;
+}
+
+.resume .resume_left {
+    width: 280px;
+    background: var(--primary-color);
+}
+
+.resume .resume_left .resume_profile {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.resume .resume_left .resume_profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.resume .resume_left .resume_content {
+    padding: 0 25px;
+}
+
+.resume .resume_left .title .bold {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.resume .resume_left .bold {
+    color: var(--white);
+}
+
+.resume .resume_left .regular {
+    color: var(--white);
+}
+
+.resume .resume_item {
+    padding: 25px 0;
+    border-bottom: 2px solid var(--white);
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+    border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+    margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+    width: 35px;
+    height: 35px;
+    background: var(--white);
+    color: var(--primary-color);
+    border-radius: 50px;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+    color: var(--white);
+}
+
+.resume .resume_left .resume_Kemampuan ul li {
+    display: flex;
+    margin-bottom: 10px;
+    color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume .resume_left .resume_Kemampuan ul li .Kemampuan_name {
+    width: 25%;
+}
+
+.resume .resume_left .resume_Kemampuan ul li .Kemampuan_progress {
+    width: 40%;
+    margin: 0 5px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+}
+
+.resume .resume_left .resume_Kemampuan ul li .Kemampuan_per {
+    width: 15%;
+}
+
+.resume .resume_left .resume_Kemampuan ul li .Kemampuan_progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--white);
+}
+
+.resume .resume_left .resume_Bahasa ul li {
+    display: flex;
+    margin-bottom: 10px;
+    color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume .resume_left .resume_Bahasa ul li .Bahasa_name {
+    width: 25%;
+}
+
+.resume .resume_left .resume_Bahasa ul li .Bahasa_progress {
+    width: 40%;
+    margin: 0 5px;
+    height: 5px;
+    background: var(--black);
+    position: relative;
+}
+
+.resume .resume_left .resume_Bahasa ul li .Bahasa_per {
+    width: 15%;
+}
+
+.resume .resume_left .resume_Bahasa ul li .Bahasa_progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--white);
+}
+
+.resume .resume_left .resume_social .semi-bold {
+    color: var(--white);
+    margin-bottom: 3px;
+}
+
+.resume .resume_right {
+    width: 520px;
+    background: var(--white);
+    padding: 25px;
+}
+
+.resume .resume_right .bold {
+    color: var(--primary-color);
+}
+.resume .resume_right .resume_tentang{
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #333;
+}
+.resume .resume_right .resume_tentang:after {
+    content: "";
+    display: block;
+    margin-top: 15px;
+}
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+.resume_right .resume_Hobby .title {
+    margin-left: 5px;
+}
+.resume .resume_right .resume_Hobby ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.resume .resume_right ul li {
+    position: relative;
+}
+
+.resume .resume_right ul li .date {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+    margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+    margin-bottom: 0px;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+.resume .resume_right .resume_Hobby ul li:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 115px;
+    background: var(--primary-color);
+}
+
+.resume .resume_right .resume_Hobby ul li:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 40px;
+    background: var(--primary-color);
+}
+
+.resume .resume_right .resume_Hobby ul li:last-child:after {
+    display: none;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.resume .resume_left .resume_Kemampuan ul li .Kemampuan_progress span,
+.resume .resume_left .resume_Bahasa ul li .Bahasa_progress span {
+    animation: fillBar 2s ease-out forwards;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before,
+.resume .resume_right .resume_Hobby ul li:before {
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border: 2px solid var(--black);
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after,
+.resume .resume_right .resume_Hobby ul li:after {
+    left: -18px;
+}
+.resume_Kemampuan ul,
+.resume_Bahasa ul,
+.resume_social ul,
+.resume_education ul,
+.resume_Hobby ul,
+.resume_work ul{
+    margin-top: 15px;
+}
+
